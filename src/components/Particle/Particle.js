@@ -1,15 +1,9 @@
 import Particles from "react-tsparticles";
 
 const Particle = () => {
-  const particlesInit = (main) => {
-    console.log(main);
+  const particlesInit = (main) => {};
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = (container) => {};
   return (
     <Particles
       id="tsparticles"
@@ -18,7 +12,7 @@ const Particle = () => {
       options={{
         background: {
           color: {
-            value: "#0d47a1",
+            value: "transparent",
           },
         },
         fpsLimit: 120,
@@ -62,14 +56,14 @@ const Particle = () => {
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             direction: "none",
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 6,
+            speed: 3,
             straight: false,
           },
           number: {
